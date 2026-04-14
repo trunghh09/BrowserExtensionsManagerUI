@@ -74,7 +74,7 @@ const filterExtensions = (option) => {
 
 // * Get data in file json
 const getExtensionsData = async () => {
-    const response = await fetch("../../data.json");
+    const response = await fetch("data.json");
     if (!response.ok) return null;
 
     const data = await response.json();
